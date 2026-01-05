@@ -11,176 +11,176 @@ import { FaXTwitter } from "react-icons/fa6"
 import { PlatformCategory } from "./types"
 
 export const categories: PlatformCategory[] = [
-    {
-        label: "FREE Content",
-        items: [
-            {
-                id: 1,
-                type: "component",
-                icon: <FaYoutube className='text-red-600 text-4xl' />,
-                title: "College to Corporate",
-                followers: "97K+ Followers",
-                description:
-                    "Listen Career and Salary insights, Corporate News and Growth Tips.",
-                link: "https://www.youtube.com/@ManoharBatra/playlists",
-                color: "from-red-50 to-red-100",
-                testimonials: [
-                    {
-                        name: "msg1",
-                        src: "/images/fansMessages/msg2.png",
-                    },
-                    {
-                        name: "msg1",
-                        src: "/images/fansMessages/msg3.png",
-                        height: 100,
-                    },
-                    {
-                        name: "msg1",
-                        src: "/images/fansMessages/msg4.png",
-                    },
-                    {
-                        name: "msg1",
-                        src: "/images/fansMessages/msg5.png",
-                    },
-                ],
-            },
-            {
-                id: 2,
-                type: "component",
-                icon: <FaYoutube className='text-red-600 text-4xl' />,
-                title: "Code & Tech",
-                followers: "1.7K+ Followers",
-                description:
-                    "Focused technical coding tutorials & problem-solving.",
-                link: "https://www.youtube.com/@RoadToCodeWithMB",
-                color: "from-purple-50 to-purple-100",
-                testimonials: [
-                    {
-                        name: "msg6",
-                        src: "/images/fansMessages/msg6.jpg",
-                    },
-                ],
-            },
-            {
-                id: 3,
-                type: "component",
-                icon: <FaLinkedin className='text-blue-700 text-4xl' />,
-                title: "LinkedIn",
-                followers: "36K+ Followers",
-                description:
-                    "Summaries of corporate employee experiences, latest news, trends, and tech (React/Next.js + System Design).",
-                link: "https://www.linkedin.com/in/manoharbatra/",
-                color: "from-blue-50 to-blue-100",
-                testimonials: [
-                    {
-                        name: "linkedinmsg1",
-                        src: "/images/fansMessages/linkedin/1.png",
-                        width: 400,
-                        height: 100,
-                    },
-                    {
-                        name: "linkedinmsg2",
-                        src: "/images/fansMessages/linkedin/2.png",
-                        width: 400,
-                        height: 100,
-                    },
-                    {
-                        name: "linkedinmsg3",
-                        src: "/images/fansMessages/linkedin/3.png",
-                        width: 400,
-                        height: 130,
-                    },
-                    {
-                        name: "linkedinmsg4",
-                        src: "/images/fansMessages/linkedin/4.png",
-                        width: 400,
-                        height: 130,
-                    },
-                    {
-                        name: "linkedinmsg4",
-                        src: "/images/fansMessages/linkedin/5.png",
-                        width: 400,
-                        height: 100,
-                    },
-                ],
-            },
-            {
-                id: 4,
-                type: "component",
-                icon: <FaInstagram className='text-pink-500 text-4xl' />,
-                title: "Instagram",
-                followers: "4K Followers",
-                description:
-                    "Where I expose influencers and reveal behind-the-scenes truths.",
-                link: "https://www.instagram.com/career.manoharbatrayt",
-                color: "from-pink-50 to-pink-100",
-                testimonials: [
-                    {
-                        name: "insta1",
-                        src: "/images/fansMessages/insta/insta1.jpeg",
-                        height: 250,
-                    },
-                ],
-            },
-            // … more socials
-        ],
-    },
+    // {
+    //     label: "FREE Content",
+    //     items: [
+    //         {
+    //             id: 1,
+    //             type: "image",
+    //             icon: <FaYoutube className='text-red-600 text-4xl' />,
+    //             title: "College to Corporate",
+    //             followers: "97K+ Followers",
+    //             description:
+    //                 "Listen Career and Salary insights, Corporate News and Growth Tips.",
+    //             link: "https://www.youtube.com/@ManoharBatra/playlists",
+    //             color: "from-red-50 to-red-100",
+    //             testimonials: [
+    //                 {
+    //                     name: "msg1",
+    //                     src: "/images/fansMessages/msg2.png",
+    //                 },
+    //                 {
+    //                     name: "msg1",
+    //                     src: "/images/fansMessages/msg3.png",
+    //                     height: 100,
+    //                 },
+    //                 {
+    //                     name: "msg1",
+    //                     src: "/images/fansMessages/msg4.png",
+    //                 },
+    //                 {
+    //                     name: "msg1",
+    //                     src: "/images/fansMessages/msg5.png",
+    //                 },
+    //             ],
+    //         },
+    //         {
+    //             id: 2,
+    //             type: "image",
+    //             icon: <FaYoutube className='text-red-600 text-4xl' />,
+    //             title: "Code & Tech",
+    //             followers: "1.7K+ Followers",
+    //             description:
+    //                 "Focused technical coding tutorials & problem-solving.",
+    //             link: "https://www.youtube.com/@RoadToCodeWithMB",
+    //             color: "from-purple-50 to-purple-100",
+    //             testimonials: [
+    //                 {
+    //                     name: "msg6",
+    //                     src: "/images/fansMessages/msg6.jpg",
+    //                 },
+    //             ],
+    //         },
+    //         {
+    //             id: 3,
+    //             type: "image",
+    //             icon: <FaLinkedin className='text-blue-700 text-4xl' />,
+    //             title: "LinkedIn",
+    //             followers: "36K+ Followers",
+    //             description:
+    //                 "Summaries of corporate employee experiences, latest news, trends, and tech (React/Next.js + System Design).",
+    //             link: "https://www.linkedin.com/in/manoharbatra/",
+    //             color: "from-blue-50 to-blue-100",
+    //             testimonials: [
+    //                 {
+    //                     name: "linkedinmsg1",
+    //                     src: "/images/fansMessages/linkedin/1.png",
+    //                     width: 400,
+    //                     height: 100,
+    //                 },
+    //                 {
+    //                     name: "linkedinmsg2",
+    //                     src: "/images/fansMessages/linkedin/2.png",
+    //                     width: 400,
+    //                     height: 100,
+    //                 },
+    //                 {
+    //                     name: "linkedinmsg3",
+    //                     src: "/images/fansMessages/linkedin/3.png",
+    //                     width: 400,
+    //                     height: 130,
+    //                 },
+    //                 {
+    //                     name: "linkedinmsg4",
+    //                     src: "/images/fansMessages/linkedin/4.png",
+    //                     width: 400,
+    //                     height: 130,
+    //                 },
+    //                 {
+    //                     name: "linkedinmsg4",
+    //                     src: "/images/fansMessages/linkedin/5.png",
+    //                     width: 400,
+    //                     height: 100,
+    //                 },
+    //             ],
+    //         },
+    //         {
+    //             id: 4,
+    //             type: "image",
+    //             icon: <FaInstagram className='text-pink-500 text-4xl' />,
+    //             title: "Instagram",
+    //             followers: "4K Followers",
+    //             description:
+    //                 "Where I expose influencers and reveal behind-the-scenes truths.",
+    //             link: "https://www.instagram.com/career.manoharbatrayt",
+    //             color: "from-pink-50 to-pink-100",
+    //             testimonials: [
+    //                 {
+    //                     name: "insta1",
+    //                     src: "/images/fansMessages/insta/insta1.jpeg",
+    //                     height: 250,
+    //                 },
+    //             ],
+    //         },
+    //         // … more socials
+    //     ],
+    // },
     {
         label: "1:1 Guidance & Career Coaching - Manohar Batra",
         items: [
-            {
-                id: 1,
-                type: "image",
-                img: "/images/topmate.jpg",
-                title: "Career Guidance",
-                followers: "2k+ Bookings",
-                description:
-                    "1:1 Guidance on Career Growth, Politics, Job Switch and Multiple Job Offers.",
-                link: "https://www.topmate.io/manohar",
-                color: "from-blue-50 to-blue-100",
-                testimonials: [
-                    {
-                        name: "topmatemsg1",
-                        src: "/images/fansMessages/topmatemsg1.png",
-                        width: 400,
-                        height: 230,
-                    },
-                    {
-                        name: "topmatemsg2",
-                        src: "/images/fansMessages/topmatemsg2.png",
-                        width: 400,
-                        height: 230,
-                    },
-                    {
-                        name: "topmatemsg3",
-                        src: "/images/fansMessages/topmatemsg3.png",
-                        width: 400,
-                        height: 230,
-                    },
-                    {
-                        name: "topmatemsg5",
-                        src: "/images/fansMessages/topmatemsg5.png",
-                        width: 400,
-                        height: 230,
-                    },
-                    {
-                        name: "topmatemsg4",
-                        src: "/images/fansMessages/topmatemsg4.png",
-                        width: 400,
-                        height: 150,
-                    },
-                    {
-                        name: "topmatemsg6",
-                        src: "/images/fansMessages/topmatemsg6.png",
-                        width: 400,
-                        height: 150,
-                    },
-                ],
-            },
+            // {
+            //     id: 1,
+            //     type: "image",
+            //     img: "/images/courses/corporate.png",
+            //     title: "Career Guidance",
+            //     followers: "2k+ Bookings",
+            //     description:
+            //         "1:1 Guidance on Career Growth, Politics, Job Switch and Multiple Job Offers.",
+            //     link: "https://www.topmate.io/manohar",
+            //     color: "from-blue-50 to-blue-100",
+            //     testimonials: [
+            //         {
+            //             name: "topmatemsg1",
+            //             src: "/images/fansMessages/topmatemsg1.png",
+            //             width: 400,
+            //             height: 230,
+            //         },
+            //         {
+            //             name: "topmatemsg2",
+            //             src: "/images/fansMessages/topmatemsg2.png",
+            //             width: 400,
+            //             height: 230,
+            //         },
+            //         {
+            //             name: "topmatemsg3",
+            //             src: "/images/fansMessages/topmatemsg3.png",
+            //             width: 400,
+            //             height: 230,
+            //         },
+            //         {
+            //             name: "topmatemsg5",
+            //             src: "/images/fansMessages/topmatemsg5.png",
+            //             width: 400,
+            //             height: 230,
+            //         },
+            //         {
+            //             name: "topmatemsg4",
+            //             src: "/images/fansMessages/topmatemsg4.png",
+            //             width: 400,
+            //             height: 150,
+            //         },
+            //         {
+            //             name: "topmatemsg6",
+            //             src: "/images/fansMessages/topmatemsg6.png",
+            //             width: 400,
+            //             height: 150,
+            //         },
+            //     ],
+            // },
             {
                 id: 2,
-                type: "component",
-                icon: <FaUsers className='text-red-600 text-4xl' />,
+                type: "image",
+                img: "/images/courses/corporate.png",
                 title: "Corporate Coaching + Whatsapp",
                 followers: "80+ Members",
                 description:
@@ -202,7 +202,7 @@ export const categories: PlatformCategory[] = [
             },
             {
                 id: 3,
-                type: "component",
+                type: "image",
                 icon: <FaUsers className='text-red-600 text-4xl' />,
                 title: "College Coaching + Whatsapp",
                 followers: "2+ Members",
@@ -214,7 +214,7 @@ export const categories: PlatformCategory[] = [
             {
                 id: 3,
                 type: "image",
-                img: "/images/topmate.jpg",
+                img: "/images/courses/companies.png",
                 title: "800+ Companies Hiring now!!",
                 followers: "4k+ Bookings",
                 description:
@@ -282,7 +282,7 @@ export const categories: PlatformCategory[] = [
         items: [
             // {
             //     id: 1,
-            //     type: "component",
+            //     type: "image",
             //     icon: <FaUsers className='text-red-600 text-4xl' />,
             //     title: "Check all Interview Ready Courses",
             //     followers: "2.5k+ Bookings",
@@ -337,7 +337,7 @@ export const categories: PlatformCategory[] = [
             // },
             {
                 id: 5,
-                type: "component",
+                type: "image",
                 icon: <FaUsers className='text-red-600 text-4xl' />,
                 title: "DSA - FREE",
                 followers: "100+ Followers",
@@ -358,7 +358,7 @@ export const categories: PlatformCategory[] = [
             },
             {
                 id: 7,
-                type: "component",
+                type: "image",
                 icon: <FaUsers className='text-red-600 text-4xl' />,
                 title: "Credly - My Technical Certifications",
                 followers: "",
@@ -374,7 +374,7 @@ export const categories: PlatformCategory[] = [
         items: [
             {
                 id: 1,
-                type: "component",
+                type: "image",
                 icon: <FaWhatsapp className='text-black text-4xl' />,
                 title: "Whatsapp",
                 followers: "370+ Members",
@@ -385,7 +385,7 @@ export const categories: PlatformCategory[] = [
             },
             {
                 id: 2,
-                type: "component",
+                type: "image",
                 icon: <FaXTwitter className='text-black text-4xl' />,
                 title: "Twitter",
                 followers: "169+ Members",
@@ -395,7 +395,7 @@ export const categories: PlatformCategory[] = [
             },
             {
                 id: 2,
-                type: "component",
+                type: "image",
                 icon: <FaGithub className='text-black text-4xl' />,
                 title: "Github",
                 followers: "63+ Members",
