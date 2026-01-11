@@ -15,7 +15,7 @@ type Platform = {
   icon?: JSX.Element;
   title: string;
   followers: string;
-  description: string;
+  description?: string;
   link: string;
   color: string;
   testimonials?: ITestimonial[]

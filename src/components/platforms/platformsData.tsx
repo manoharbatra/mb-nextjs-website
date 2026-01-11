@@ -37,6 +37,17 @@ export const categories: PlatformCategory[] = [
                         height: 180,
                     },
                 ],
+            },
+            {
+                id: 2,
+                type: "component",
+                img: "/images/course_banner/corporate.png",
+                icon: <FaUsers className='text-red-600 text-4xl' />,
+                title: "Corporate Coaching + 1:1 Mentorship",
+                followers: "20+ Members",
+                link: "https://collegetocorporate.akamai.net.in/new-courses/2-working-professionals-career-guide",      
+                color: "from-red-50 to-red-100",
+
             }
         ],
     },

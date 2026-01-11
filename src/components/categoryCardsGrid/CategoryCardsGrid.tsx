@@ -19,7 +19,7 @@ interface Item {
     type: "image" | "component"
     title: string
     followers: string
-    description: string
+    description?: string
     color?: string
     link: string
     img?: string
@@ -79,18 +79,20 @@ export default function CategoryCardsGrid({
                                         </h4>
 
                                         {/* Followers + View details */}
-                                        <div className='flex justify-between items-center text-sm mt-1'>
-                                            <span className='text-gray-600'>
-                                                {p.followers}
-                                            </span>
+                                        {p.description && (
+                                            <div className="flex justify-between items-center text-sm mt-1">
+                                                <span className="text-gray-600">
+                                                    {p.followers}
+                                                </span>
 
-                                            <button
-                                                onClick={() => setActiveItem(p)}
-                                                className='text-primary underline font-medium'
-                                            >
-                                                View details
-                                            </button>
-                                        </div>
+                                                <button
+                                                    onClick={() => setActiveItem(p)}
+                                                    className="text-primary underline font-medium"
+                                                >
+                                                    View details
+                                                </button>
+                                            </div>
+                                        )}
 
                                         {/* Pricing */}
                                         <div className='mt-2'>
