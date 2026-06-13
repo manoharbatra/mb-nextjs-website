@@ -39,7 +39,7 @@ const events: Event[] = [
         description:
             "GenAI Fundamentals and LLM Hands On Projects",
         image: "/images/events/mc4-genAI.png",
-        speaker: "Manohar Batra",
+        speaker: "Priyojit Chakraborty",
         date: "2026-06-07",
         time: "02:00 PM",
         registrations: 23,
