@@ -27,10 +27,10 @@ const events: Event[] = [
         speaker: "Manohar Batra",
         date: "2026-06-13",
         time: "12:30 PM",
-        registrations: 20,
+        registrations: 15,
         link: "https://topmate.io/manohar/2062684",
         eventImages: [
-            "/images/events/masterclass5/pic1.png"
+            "/images/events/masterclass5/pic1.jpg"
         ],
     },
     {
@@ -42,7 +42,7 @@ const events: Event[] = [
         speaker: "Manohar Batra",
         date: "2026-06-07",
         time: "02:00 PM",
-        registrations: 20,
+        registrations: 23,
         link: "https://topmate.io/manohar/2062684",
         eventImages: [
             "/images/events/masterclass4/pic1.png"
