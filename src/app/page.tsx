@@ -9,7 +9,7 @@ import { saleConfig } from "@/utils/constants"
 import Image from "next/image"
 import Link from "next/link"
 import HeroBanner from "@/components/heroBanner/HeroBanner"
-import Platforms from "@/components/platforms/Platforms"
+// import Platforms from "@/components/platforms/Platforms"
 import Gallery from "@/components/gallery/Gallery"
 import CorporateAppreciation from "@/components/corporateAppreciation/CorporateAppreciation"
 // import FAQ from "@/components/faq/FAQ"
@@ -20,6 +20,7 @@ import ContactMe from "@/components/contactMe/ContactMe"
 // import BrandPartners from "@/components/brandPartners/BrandPartners"
 import CollegeVisits from "@/components/collegeVisits/CollegeVisits"
 import Certifications from "@/components/certifications/Certifications"
+import { CohortPricingSection } from "@/components/cohortPricing"
 
 export default function Home() {
     const [showPromo, setShowPromo] = useState(false)
@@ -132,6 +133,7 @@ export default function Home() {
 
             {/* Main content */}
             <HeroBanner />
+            <CohortPricingSection />
             <div className='flex-1 pl-6 pr-6 pb-6'>
                 <header className='text-center pt-6 px-6 pb-4'>
                 <motion.h1

@@ -19,10 +19,25 @@ type Event = {
 
 const events: Event[] = [
     {
+       id: 5,
+        title: "Masterclass #5 - Crack AI Interview",
+        description:
+            "AI Interview Preparation and Hands On Projects",
+        image: "/images/events/mc5-genAI2.png",
+        speaker: "Manohar Batra",
+        date: "2026-06-13",
+        time: "12:30 PM",
+        registrations: 20,
+        link: "https://topmate.io/manohar/2062684",
+        eventImages: [
+            "/images/events/masterclass5/pic1.png"
+        ],
+    },
+    {
         id: 4,
         title: "Masterclass #4 - AI use cases - Hands On",
         description:
-            "GenAI Fundamentals and Hands On Projects",
+            "GenAI Fundamentals and LLM Hands On Projects",
         image: "/images/events/mc4-genAI.png",
         speaker: "Manohar Batra",
         date: "2026-06-07",
