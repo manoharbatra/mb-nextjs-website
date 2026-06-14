@@ -51,19 +51,19 @@ export const categories: PlatformCategory[] = [
                 price: 149,
                 oldPrice: 499,
             },
-            // {
-            //     id: 3,
-            //     type: "image",
-            //     img: "/images/course_banner/know_your_worth.png",
-            //     title: "Know Your Worth",
-            //     followers: "1k+ Bookings",
-            //     description:
-            //         "Real Salary Insights of IT Employees",
-            //     link: "https://topmate.io/manohar_batra/1801807",
-            //     color: "from-green-50 to-green-100",
-            //     price: 99,
-            //     oldPrice: 499,
-            // },
+            {
+                id: 3,
+                type: "image",
+                img: "/images/course_banner/AI_projects.png",
+                title: "AI 10+ Hands On Projects",
+                followers: "50+ Bookings",
+                description:
+                    "Learn AI with 10+ Hands On Projects and get your AI Portfolio ready for interviews",
+                link: "https://topmate.io/manohar/1973775",
+                color: "from-green-50 to-green-100",
+                price: 299,
+                oldPrice: 499,
+            },
         ],
     },
     {

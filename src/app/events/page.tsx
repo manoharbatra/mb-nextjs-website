@@ -19,34 +19,28 @@ type Event = {
 
 const events: Event[] = [
     {
-       id: 5,
+        id: 5,
         title: "Masterclass #5 - Crack AI Interview",
-        description:
-            "AI Interview Preparation and Hands On Projects",
+        description: "AI Interview Preparation and Hands On Projects",
         image: "/images/events/mc5-genAI2.png",
         speaker: "Manohar Batra",
         date: "2026-06-13",
         time: "12:30 PM",
         registrations: 15,
         link: "https://topmate.io/manohar/2062684",
-        eventImages: [
-            "/images/events/masterclass5/pic1.jpg"
-        ],
+        eventImages: ["/images/events/masterclass5/pic1.jpg"],
     },
     {
         id: 4,
         title: "Masterclass #4 - AI use cases - Hands On",
-        description:
-            "GenAI Fundamentals and LLM Hands On Projects",
+        description: "GenAI Fundamentals and LLM Hands On Projects",
         image: "/images/events/mc4-genAI.png",
-        speaker: "Priyojit Chakraborty",
+        speaker: "Manohar Batra",
         date: "2026-06-07",
         time: "02:00 PM",
         registrations: 23,
         link: "https://topmate.io/manohar/2062684",
-        eventImages: [
-            "/images/events/masterclass4/pic1.png"
-        ],
+        eventImages: ["/images/events/masterclass4/pic1.png"],
     },
     {
         id: 3,
@@ -59,12 +53,8 @@ const events: Event[] = [
         time: "11:00 AM",
         registrations: 20,
         link: "https://topmate.io/manohar",
-        eventImages: [
-            "/images/events/masterclass3/pic1.png"
-        ],
-        testimonials: [
-            "/images/testimonials/mc3-1.png"
-        ],
+        eventImages: ["/images/events/masterclass3/pic1.png"],
+        testimonials: ["/images/testimonials/mc3-1.png"],
     },
     // {
     //     id: 3,
@@ -89,14 +79,12 @@ const events: Event[] = [
         time: "11:00 AM",
         registrations: 37,
         link: "https://topmate.io/manohar",
-        eventImages: [
-            "/images/events/masterclass2/pic1.png"
-        ],
+        eventImages: ["/images/events/masterclass2/pic1.png"],
         testimonials: [
             "/images/testimonials/mc2-1.png",
             "/images/testimonials/mc2-2.png",
             "/images/testimonials/mc2-3.png",
-            "/images/testimonials/mc2-4.png"
+            "/images/testimonials/mc2-4.png",
         ],
     },
     {
@@ -123,17 +111,15 @@ const events: Event[] = [
 ]
 
 export default function EventsPage() {
-    const [activeTab, setActiveTab] = useState<"past" | "future">("future")
     const [selectedImages, setSelectedImages] = useState<string[] | null>(null)
     const [modalTitle, setModalTitle] = useState<string | null>(null)
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
     const now = new Date()
 
-    const pastEvents = events.filter((event) => new Date(event.date) < now)
-    const futureEvents = events.filter((event) => new Date(event.date) >= now)
-
-    const displayedEvents = activeTab === "past" ? pastEvents : futureEvents
+    const displayedEvents = [...events].sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+    )
 
     const handleClick = (event: Event, isPast: boolean) => {
         if (event.eventImages && event.eventImages.length > 0) {
@@ -172,7 +158,8 @@ export default function EventsPage() {
     const showPrevImage = () => {
         if (!selectedImages) return
         setCurrentImageIndex(
-            (currentImageIndex - 1 + selectedImages.length) % selectedImages.length,
+            (currentImageIndex - 1 + selectedImages.length) %
+                selectedImages.length,
         )
     }
 
@@ -185,7 +172,8 @@ export default function EventsPage() {
         <div className='container mx-auto px-4 py-8'>
             <div className='mb-6 flex items-center gap-2'>
                 <h1 className='text-3xl font-bold'>
-                    Events (Past Events recordings are found in Job Switch Course)
+                    Events recordings are found in Job Switch
+                    Course
                 </h1>
                 <a
                     href='https://topmate.io/manohar/1964588'
@@ -195,31 +183,6 @@ export default function EventsPage() {
                 >
                     Link
                 </a>
-            </div>
-
-            {/* Tabs */}
-            <div className='flex space-x-4 mb-6'>
-                <button
-                    onClick={() => setActiveTab("past")}
-                    className={`px-4 py-2 rounded ${
-                        activeTab === "past"
-                            ? "bg-blue-500 text-white"
-                            : "bg-gray-200 text-gray-700"
-                    }`}
-                >
-                    Past Events
-                </button>
-
-                <button
-                    onClick={() => setActiveTab("future")}
-                    className={`px-4 py-2 rounded ${
-                        activeTab === "future"
-                            ? "bg-blue-500 text-white"
-                            : "bg-gray-200 text-gray-700"
-                    }`}
-                >
-                    Future Events
-                </button>
             </div>
 
             {/* Cards */}
@@ -255,14 +218,19 @@ export default function EventsPage() {
                                         Starts on: {event.time}, {event.date}
                                     </p>
 
-                                    {event.testimonials && event.testimonials.length > 0 && (
-                                        <button
-                                            onClick={() => handleTestimonialClick(event)}
-                                            className='px-1 rounded-lg font-small text-white bg-indigo-600 hover:bg-indigo-700'
-                                        >
-                                            Testimonials
-                                        </button>
-                                    )}
+                                    {event.testimonials &&
+                                        event.testimonials.length > 0 && (
+                                            <button
+                                                onClick={() =>
+                                                    handleTestimonialClick(
+                                                        event,
+                                                    )
+                                                }
+                                                className='px-1 rounded-lg font-small text-white bg-indigo-600 hover:bg-indigo-700'
+                                            >
+                                                Testimonials
+                                            </button>
+                                        )}
                                 </div>
 
                                 <div className='flex items-center justify-between mt-4 gap-3'>
@@ -278,15 +246,15 @@ export default function EventsPage() {
                                             hasImages
                                                 ? "bg-purple-600 hover:bg-purple-700"
                                                 : isPast
-                                                ? "bg-gray-700 hover:bg-gray-800"
-                                                : "bg-teal-600 hover:bg-teal-700"
+                                                  ? "bg-gray-700 hover:bg-gray-800"
+                                                  : "bg-teal-600 hover:bg-teal-700"
                                         }`}
                                     >
                                         {hasImages
                                             ? "View Images"
                                             : isPast
-                                            ? "Watch Recording"
-                                            : "Register Now"}
+                                              ? "Watch Recording"
+                                              : "Register Now"}
                                     </button>
                                 </div>
                             </div>
@@ -341,7 +309,8 @@ export default function EventsPage() {
 
                         <div className='mt-3 rounded-b-2xl bg-white p-4 text-center'>
                             <p className='text-sm text-gray-700'>
-                                {currentImageIndex + 1} of {selectedImages.length}
+                                {currentImageIndex + 1} of{" "}
+                                {selectedImages.length}
                             </p>
                         </div>
                     </div>
