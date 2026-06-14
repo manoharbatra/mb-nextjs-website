@@ -40,24 +40,24 @@
   margin: 0;
   font-size: 0.85rem;
   letter-spacing: 2px;
-  color: #000;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
 .name {
   margin: 0.35rem 0 0;
   font-size: 1.6rem;
-  color: #000;
+  color: var(--text-primary);
 }
 
 .subtitle {
   margin: 0.25rem 0 1rem;
-  color: #000;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
 .description {
-  color: #000;
+  color: var(--text-primary);
   line-height: 1.6;
   margin: 0 0 1.25rem;
   max-width: 60ch;
@@ -72,7 +72,7 @@
 
 .meta-item {
   background: rgba(255,255,255,0.03);
-  color: #000;
+  color: var(--text-primary);
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   font-size: 0.85rem;

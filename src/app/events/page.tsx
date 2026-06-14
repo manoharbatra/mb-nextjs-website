@@ -226,7 +226,7 @@ export default function EventsPage() {
                                                         event,
                                                     )
                                                 }
-                                                className='px-1 rounded-lg font-small text-white bg-indigo-600 hover:bg-indigo-700'
+                                                className='px-1 rounded-lg font-small text-white bg-blue-600 hover:bg-blue-700'
                                             >
                                                 Testimonials
                                             </button>
@@ -244,10 +244,10 @@ export default function EventsPage() {
                                         }
                                         className={`px-5 py-2 rounded-lg font-medium text-white ${
                                             hasImages
-                                                ? "bg-purple-600 hover:bg-purple-700"
+                                                ? "bg-blue-600 hover:bg-blue-700"
                                                 : isPast
-                                                  ? "bg-gray-700 hover:bg-gray-800"
-                                                  : "bg-teal-600 hover:bg-teal-700"
+                                                  ? "bg-gray-500 hover:bg-gray-600"
+                                                  : "bg-green-600 hover:bg-green-700"
                                         }`}
                                     >
                                         {hasImages
@@ -264,7 +264,7 @@ export default function EventsPage() {
             </div>
 
             {selectedImages && (
-                <div className='fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4'>
+                <div className='fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4'>
                     <div className='relative w-full max-w-4xl'>
                         <div className='mb-3 flex items-center justify-between rounded-t-2xl bg-white px-4 py-3'>
                             <h2 className='text-lg font-semibold text-gray-800'>

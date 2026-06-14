@@ -15,7 +15,7 @@ const platforms = [
     {
         id: 1,
         type: "component",
-        icon: <FaLinkedin className='text-blue-700 text-4xl' />,
+        icon: <FaLinkedin className='text-blue-900 text-4xl' />,
         title: "LinkedIn",
         followers: "36K Followers",
         description:
@@ -26,66 +26,66 @@ const platforms = [
     {
         id: 2,
         type: "component",
-        icon: <FaYoutube className='text-red-600 text-4xl' />,
+        icon: <FaYoutube className='text-blue-900 text-4xl' />,
         title: "College to Corporate",
         followers: "94K Followers",
         description:
             "Main channel with deep insights, tutorials, and trending discussions.",
         link: "https://youtube.com/yourchannel",
-        color: "from-red-50 to-red-100",
+        color: "from-blue-100 to-blue-200",
     },
     {
         id: 3,
         type: "component",
-        icon: <FaYoutube className='text-red-600 text-4xl' />,
+        icon: <FaYoutube className='text-blue-900 text-4xl' />,
         title: "Code & Tech",
         followers: "1.6K Followers",
         description: "Focused technical coding tutorials & problem-solving.",
         link: "https://youtube.com/yourchannel",
-        color: "from-purple-50 to-purple-100",
+        color: "from-blue-50 to-blue-100",
     },
     {
         id: 4,
         type: "component",
-        icon: <FaInstagram className='text-pink-500 text-4xl' />,
+        icon: <FaInstagram className='text-blue-900 text-4xl' />,
         title: "Instagram",
         followers: "4K Followers",
         description:
             "Where I expose influencers and reveal behind-the-scenes truths.",
         link: "https://instagram.com/yourprofile",
-        color: "from-pink-50 to-pink-100",
+        color: "from-blue-100 to-blue-200",
     },
     {
         id: 5,
         type: "component",
-        icon: <FaUsers className='text-green-600 text-4xl' />,
+        icon: <FaUsers className='text-blue-900 text-4xl' />,
         title: "Corporate Coaching",
         followers: "70+ Members",
         description:
             "Unlimited peer guidance and referrals (free but conditions apply).",
         link: "#",
-        color: "from-green-50 to-green-100",
+        color: "from-blue-50 to-blue-100",
     },
     {
         id: 6,
         type: "component",
-        icon: <FaCode className='text-purple-600 text-4xl' />,
+        icon: <FaCode className='text-blue-900 text-4xl' />,
         title: "Tech Coding Channel",
         followers: "1.6K Followers",
         description: "Focused technical coding tutorials & problem-solving.",
         link: "https://youtube.com/technicalcoding",
-        color: "from-purple-50 to-purple-100",
+        color: "from-blue-100 to-blue-200",
     },
     {
         id: 7,
         type: "component",
-        icon: <FaMedium className='text-black text-4xl' />,
+        icon: <FaMedium className='text-blue-900 text-4xl' />,
         title: "Medium",
         followers: "26 Followers",
         description:
             "Articles and blogs on tech, career, and corporate insights.",
         link: "https://medium.com/@contactmanoharbatra",
-        color: "from-gray-50 to-gray-100",
+        color: "from-blue-50 to-blue-100",
     },
     {
         id: 8,
@@ -96,7 +96,7 @@ const platforms = [
         description:
             "Articles and blogs on tech, career, and corporate insights.",
         link: "https://www.topmate.io/manohar",
-        color: "from-gray-50 to-gray-100",
+        color: "from-blue-100 to-blue-200",
     },
 ]
 
@@ -104,7 +104,7 @@ export default function LandingPage() {
     return (
         <section
             id='home'
-            className='min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900'
+            className='min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 text-blue-900'
         >
             <header className='text-center pt-0 pr-10 pb-4 pl-6 px-6'>
                 <motion.h2
@@ -146,10 +146,10 @@ export default function LandingPage() {
                                     {p.title}
                                 </h2>
                             </div>
-                            <p className='text-sm text-gray-600 mb-2 font-semibold'>
+                            <p className='text-sm text-blue-700 mb-2 font-semibold'>
                                 {p.followers}
                             </p>
-                            <p className='text-gray-700 text-sm'>
+                            <p className='text-blue-800 text-sm'>
                                 {p.description}
                             </p>
                         </div>
@@ -157,7 +157,7 @@ export default function LandingPage() {
                             href={p.link}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='mt-6 inline-block bg-gray-900 text-white px-4 py-2 rounded-xl text-center hover:bg-gray-700 transition'
+                            className='mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-xl text-center hover:bg-blue-700 transition'
                         >
                             Click
                         </a>

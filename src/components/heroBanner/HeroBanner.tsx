@@ -16,7 +16,7 @@ export default function HeroBanner() {
     }, [])
 
     return (
-        <section className="w-full bg-gradient-to-r from-green-100 to-blue-100">
+        <section className="w-full bg-white">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 pt-12 pb-16">
 
                 {/* LEFT SIDE */}
@@ -24,15 +24,15 @@ export default function HeroBanner() {
 
 
                     {/* HERO TEXT */}
-                    <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+                    <h1 className="text-3xl md:text-5xl font-bold text-slate-900">
                         College to Corporate
                     </h1>
 
-                    <p className="text-lg md:text-2xl font-medium text-gray-800 transition-opacity duration-500">
+                    <p className="text-lg md:text-2xl font-medium text-slate-800 transition-opacity duration-500">
                         {heroData[index].row1}
                     </p>
 
-                    <p className="text-base md:text-2xl text-gray-600">
+                    <p className="text-base md:text-2xl text-slate-600">
                         {heroData[index].row2}
                     </p>
 
@@ -73,10 +73,10 @@ export default function HeroBanner() {
 
                                         {/* TEXT */}
                                         <div className="text-left">
-                                            <p className="text-lg font-bold text-gray-900">
+                                            <p className="text-lg font-bold text-slate-900">
                                                 {item.value}
                                             </p>
-                                            <p className="text-xs text-gray-600">
+                                            <p className="text-xs text-slate-600">
                                                 {item.label}
                                             </p>
                                         </div>
@@ -99,13 +99,13 @@ export default function HeroBanner() {
                     />
 
                     <div className="absolute top-2 left-2 md:top-8 md:left-10 bg-white px-2 py-1 md:px-4 md:py-2 rounded-lg shadow-lg text-xs md:text-base">
-                        <p className="font-semibold text-black">
+                        <p className="font-semibold text-slate-900">
                             Sr Cloud Full Stack
                         </p>
                     </div>
 
                     <div className="absolute bottom-36 right-2 md:right-10 bg-white px-3 py-1 md:px-10 md:py-2 rounded-lg shadow-lg text-xs md:text-base">
-                        <p className="font-semibold text-black">11 yrs exp</p>
+                        <p className="font-semibold text-slate-900">11 yrs exp</p>
                     </div>
 
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 
