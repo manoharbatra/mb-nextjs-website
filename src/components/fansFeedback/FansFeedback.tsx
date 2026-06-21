@@ -52,6 +52,11 @@ const data: IFansFeedback[] = [
         img: "/images/testimonials/pic3.png",
         position: "right",
     },
+    {
+        source: "whatsapp",
+        img: "/images/testimonials/pic18.jpeg",
+        position: "left",
+    },
 ]
 
 export default function FansFeedback() {

@@ -19,6 +19,21 @@ type Event = {
 
 const events: Event[] = [
     {
+        id: 6,
+        title: "Masterclass #6 - GenAI - MCP Project",
+        description: "AI Interview Preparation and Hands On Projects",
+        image: "/images/events/mc6-mcp.png",
+        speaker: "Manohar Batra",
+        date: "2026-06-21",
+        time: "12:00 PM",
+        registrations: 13,
+        link: "https://topmate.io/manohar/2062684",
+        eventImages: [
+            "/images/events/masterclass5/pic1.jpg",
+            "/images/events/masterclass5/pic2.jpg",
+        ],
+    },
+    {
         id: 5,
         title: "Masterclass #5 - Crack AI Interview",
         description: "AI Interview Preparation and Hands On Projects",
@@ -172,8 +187,7 @@ export default function EventsPage() {
         <div className='container mx-auto px-4 py-8'>
             <div className='mb-6 flex items-center gap-2'>
                 <h1 className='text-3xl font-bold'>
-                    Events recordings are found in Job Switch
-                    Course
+                    Events recordings are found in Job Switch Course
                 </h1>
                 <a
                     href='https://topmate.io/manohar/1964588'
