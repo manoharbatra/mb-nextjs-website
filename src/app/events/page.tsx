@@ -29,8 +29,8 @@ const events: Event[] = [
         registrations: 13,
         link: "https://topmate.io/manohar/2062684",
         eventImages: [
-            "/images/events/masterclass5/pic1.jpg",
-            "/images/events/masterclass5/pic2.jpg",
+            "/images/events/masterclass6/pic1.jpg",
+            "/images/events/masterclass6/pic2.jpg",
         ],
     },
     {
