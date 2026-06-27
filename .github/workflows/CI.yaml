@@ -51,55 +51,55 @@ jobs:
         env:
           CI: true
 
-      # Upload CI log
+      # Upload CI log on failure
       - name: Upload CI Log
-        if: always()
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: ci-log
           path: ci.log
 
-      # Install Gemini SDK
+      # Install Gemini SDK on failure
       - name: Install Gemini SDK
-        if: always()
+        if: failure()
         run: |
           python -m pip install --upgrade pip
           pip install google-generativeai
 
-      # Generate RCA
+      # Generate RCA on failure
       - name: Generate RCA
-        if: always()
+        if: failure()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python scripts/failure_analysis.py
 
-      # Publish RCA summary
+      # Publish RCA summary on failure
       - name: Publish RCA Summary
-        if: always()
+        if: failure()
         run: |
           echo "## 🚨 PRISM RCA Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           cat rca_summary.md >> $GITHUB_STEP_SUMMARY
 
-      # Verify RCA file
+      # Verify RCA file on failure
       - name: Verify RCA File
-        if: always()
+        if: failure()
         run: |
           pwd
           ls -la
           cat rca.md
 
-      # Rename RCA file
+      # Rename RCA file on failure
       - name: Rename RCA
-        if: always()
+        if: failure()
         run: |
           SHORT_SHA=$(git rev-parse --short HEAD)
           mv rca.md ci-rca-${SHORT_SHA}.md
 
-      # Upload RCA artifact
+      # Upload RCA artifact on failure
       - name: Upload RCA
-        if: always()
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: ci-rca

@@ -2,7 +2,7 @@ import Script from "next/script"
 import type { Metadata } from "next"
 import AnnouncementBanner from "@/components/announcementBanner/AnnouncementBanner"
 import Header from "@/components/header/Header"
-import Footer from "@/components/footer/Footer"
+import Footer from "@/components"
 import { Toaster } from "react-hot-toast"
 import "./globals.css"
 
