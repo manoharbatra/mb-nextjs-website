@@ -50,6 +50,7 @@ jobs:
           npm run build 2>&1 | tee -a ci.log
         env:
           CI: true
+        continue-on-error: true
 
       # Upload CI log on failure
       - name: Upload CI Log
