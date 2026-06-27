@@ -41,7 +41,9 @@ jobs:
       
       # Build the app
       - name: Build Next.js app
-        run: npm run build
+        run: |
+         cd ./next
+         npm run build
         env:
           CI: true
       
@@ -54,8 +56,13 @@ jobs:
           path: .next/
           retention-days: 5
       
-      # Optional: Run the app (smoke test)
+      # Verify build succeeded
       - name: Verify build
         run: |
-          npm run build
-          echo "Build completed successfully!"
+          if [ -d ".next" ]; then
+            echo "✓ Build completed successfully!"
+            echo "Build output directory size: $(du -sh .next/)"
+          else
+            echo "✗ Build directory .next/ not found"
+            exit 1
+          fi
