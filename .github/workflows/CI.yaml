@@ -1,0 +1,61 @@
+name: College To Corporate
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 22.x]
+    
+    steps:
+      # Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      # Setup Node.js
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci
+      
+      # Run linting
+      - name: Run linting
+        run: npm run lint
+        continue-on-error: true
+      
+      # Build the app
+      - name: Build Next.js app
+        run: npm run build
+        env:
+          CI: true
+      
+      # Optional: Upload build artifacts
+      - name: Upload build artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-build-${{ matrix.node-version }}
+          path: .next/
+          retention-days: 5
+      
+      # Optional: Run the app (smoke test)
+      - name: Verify build
+        run: |
+          npm run build
+          echo "Build completed successfully!"
