@@ -20,9 +20,6 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode
 }>) {
-    // Intentional build failure for testing CI/RCA
-    const invalid = children.nonExistentProperty.test()
-    
     return (
         <html lang='en'>
             <Script id="theme-init" strategy="beforeInteractive">

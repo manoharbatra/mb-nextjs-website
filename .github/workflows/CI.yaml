@@ -46,6 +46,7 @@ jobs:
 
       # Build the app
       - name: Build Next.js app
+        id: build
         run: |
           npm run build 2>&1 | tee -a ci.log
         env:
@@ -54,7 +55,7 @@ jobs:
 
       # Upload CI log on failure
       - name: Upload CI Log
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: ci-log
@@ -62,14 +63,14 @@ jobs:
 
       # Install Gemini SDK on failure
       - name: Install Gemini SDK
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         run: |
           python -m pip install --upgrade pip
           pip install google-generativeai
 
       # Generate RCA on failure
       - name: Generate RCA
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
@@ -77,7 +78,7 @@ jobs:
 
       # Publish RCA summary on failure
       - name: Publish RCA Summary
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         run: |
           echo "## 🚨 PRISM RCA Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -85,7 +86,7 @@ jobs:
 
       # Verify RCA file on failure
       - name: Verify RCA File
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         run: |
           pwd
           ls -la
@@ -93,14 +94,14 @@ jobs:
 
       # Rename RCA file on failure
       - name: Rename RCA
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         run: |
           SHORT_SHA=$(git rev-parse --short HEAD)
           mv rca.md ci-rca-${SHORT_SHA}.md
 
       # Upload RCA artifact on failure
       - name: Upload RCA
-        if: failure()
+        if: steps.build.conclusion == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: ci-rca
