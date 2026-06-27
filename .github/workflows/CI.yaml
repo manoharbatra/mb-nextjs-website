@@ -79,7 +79,7 @@ jobs:
       - name: Publish RCA Summary
         if: failure()
         run: |
-          echo "## 🚨 PRISM RCA Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## 🚨 RCA Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           cat rca_summary.md >> $GITHUB_STEP_SUMMARY
 
