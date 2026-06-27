@@ -45,6 +45,18 @@ jobs:
         env:
           CI: true
       
+      # Check if build was successful
+      - name: Check build output
+        run: |
+          if [ -d ".next" ]; then
+            echo "✓ Build directory exists"
+            ls -la .next/ | head -20
+          else
+            echo "✗ Build directory .next/ NOT found!"
+            ls -la
+            exit 1
+          fi
+      
       # Optional: Upload build artifacts
       - name: Upload build artifacts
         if: success()
@@ -57,10 +69,5 @@ jobs:
       # Verify build succeeded
       - name: Verify build
         run: |
-          if [ -d ".next" ]; then
-            echo "✓ Build completed successfully!"
-            echo "Build output directory size: $(du -sh .next/)"
-          else
-            echo "✗ Build directory .next/ not found"
-            exit 1
-          fi
+          echo "✓ Build completed successfully!"
+          echo "Build output directory size: $(du -sh .next/)"
