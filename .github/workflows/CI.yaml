@@ -105,23 +105,6 @@ jobs:
           name: ci-rca
           path: ci-rca-*.md
 
-      # Send RCA email
-      - name: Send RCA Email
-        if: always()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "🚨 PRISM CI Failure Analysis"
-          to: prism.bot11@gmail.com
-          from: PRISM Bot
-          body: |
-            AI-generated RCA report attached.
-          attachments: ci-rca-*.md
-
       # Check if build output exists
       - name: Check build output
         run: |
