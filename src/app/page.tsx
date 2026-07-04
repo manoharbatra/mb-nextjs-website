@@ -21,6 +21,7 @@ import ContactMe from "@/components/contactMe/ContactMe"
 import CollegeVisits from "@/components/collegeVisits/CollegeVisits"
 import Certifications from "@/components/certifications/Certifications"
 import { CohortPricingSection } from "@/components/cohortPricing"
+import CommunityCards from "@/components/heroBanner/CommunityCards"
 
 export default function Home() {
     const [showPromo, setShowPromo] = useState(false)
@@ -133,6 +134,7 @@ export default function Home() {
 
             {/* Main content */}
             <HeroBanner />
+            <CommunityCards />
             <CohortPricingSection />
             <div className='flex-1 pl-6 pr-6 pb-6'>
                 <header className='text-center pt-6 px-6 pb-4'>

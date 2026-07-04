@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { communityData, heroData } from "./heroData"
+import { heroData, mainButtonsData } from "./heroData"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { FaTelegram } from "react-icons/fa6"
@@ -18,7 +18,7 @@ export default function HeroBanner() {
 
     return (
         <section className="w-full bg-white">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 pt-12 pb-16">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 pt-6 pb-8">
 
                 {/* LEFT SIDE */}
                 <div className="flex-1 space-y-8 pl-4 md:pl-10 text-center md:text-left">
@@ -44,7 +44,7 @@ export default function HeroBanner() {
                         transition={{ duration: 0.8, delay: 0.15 }}
                         className="flex flex-wrap justify-center md:justify-start gap-4 rounded-full"
                     >
-                        {communityData.map((item, idx) => {
+                        {mainButtonsData.map((item, idx) => {
                             const Icon = item.icon
                             const hasBorderMotion = item.icon === FaTelegram || item.img === "/images/topmate.jpg"
 

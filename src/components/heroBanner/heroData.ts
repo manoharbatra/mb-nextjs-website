@@ -8,8 +8,18 @@ import {
   FaMedium,
   FaGithub,
   FaWhatsapp,
-  FaTelegram
+  FaTelegram,
+  FaBook
 } from "react-icons/fa6"
+
+export type CommunityItem = {
+  href: string
+  value: string
+  label: string
+  color: string
+  icon?: React.ComponentType<any>
+  img?: string
+}
 
 
 // heroData.ts
@@ -37,14 +47,14 @@ export const heroData = [
 ];
 
 
-export const communityData = [
-  {
-    href: "https://www.topmate.io/manohar",
-    img: "/images/topmate.jpg",
-    value: "Talk to Me",
-    label: "3k+ 1:1 Calls",
-    color: "text-red-500",
-  },
+export const communityData: CommunityItem[] = [
+  // {
+  //   href: "https://www.topmate.io/manohar",
+  //   img: "/images/topmate.jpg",
+  //   value: "Talk to Me",
+  //   label: "3k+ 1:1 Calls",
+  //   color: "text-red-500",
+  // },
   {
     href: "https://www.youtube.com/@ManoharBatra",
     icon: FaYoutube,
@@ -102,6 +112,30 @@ export const communityData = [
   //   label: "Members",
   //   color: "text-green-500",
   // },
+  // {
+  //   href: "https://t.me/manoharbatrag",
+  //   icon: FaTelegram,
+  //   value: "Job Updates",
+  //   label: "2.7k+ Followers",
+  //   color: "text-blue-400",
+  // },
+]
+
+export const mainButtonsData: CommunityItem[] = [
+  {
+    href: "https://www.topmate.io/manohar",
+    img: "/images/topmate.jpg",
+    value: "Talk to Me",
+    label: "3k+ 1:1 Calls",
+    color: "text-red-500",
+  },
+  {
+    href: "/courses",
+    icon: FaBook,
+    value: "Explore Courses",
+    label: "Live Cohorts & Courses",
+    color: "text-purple-600",
+  },
   {
     href: "https://t.me/manoharbatrag",
     icon: FaTelegram,
