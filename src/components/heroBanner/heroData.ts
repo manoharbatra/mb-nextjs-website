@@ -1,23 +1,24 @@
 import {
   FaYoutube,
   FaLinkedin,
-  FaDiscord,
-  FaXTwitter,
+  // FaDiscord,
+  // FaXTwitter,
   FaInstagram,
-  FaFacebook,
+  // FaFacebook,
   FaMedium,
   FaGithub,
-  FaWhatsapp,
+  // FaWhatsapp,
   FaTelegram,
   FaBook
 } from "react-icons/fa6"
+import type { ComponentType, SVGProps } from "react"
 
 export type CommunityItem = {
   href: string
   value: string
   label: string
   color: string
-  icon?: React.ComponentType<any>
+  icon?: ComponentType<SVGProps<SVGSVGElement>>
   img?: string
 }
 
