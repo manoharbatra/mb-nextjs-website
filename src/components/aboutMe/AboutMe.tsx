@@ -23,23 +23,20 @@ export default function AboutMe() {
                 >
                     About Me
                 </h2>
-                <p className='text-lg leading-relaxed text-gray-600'>
+                <p className='text-lg leading-relaxed text-gray-600 space-y-4'>
+                    <p>
                     Hi, I’m{" "}
                     <span className='font-semibold text-indigo-500'>
-                        Manohar Batra
+                        Manohar Batra, 11+ years of experience
                     </span>
-                    , — an AI Frontend Architect focused
-                    on building next-generation user experiences by combining
-                    scalable frontend architecture with AI-driven capabilities.
-                    With over a decade of experience in React and UI systems, I
-                    design intelligent, adaptive interfaces that integrate LLMs,
-                    automation, and real-time decisioning into modern web
-                    applications. 
-                </p>
-                <p className='text-lg leading-relaxed text-gray-600'>
-                    I also mentor aspiring engineers through
-                    CollegeToCorporate, helping them navigate careers in the
-                    evolving AI-first tech landscape.
+                    , - a Senior Software Engineer who has grown my career through strategic job switches, strong technical foundations, and real-world problem solving. Over the years, I’ve worked across backend, full-stack, distributed systems, cloud infrastructure, CI/CD, system design, and AI-assisted engineering.
+</p>
+                    <p>
+                        I help software engineers and aspiring developers with career guidance, resume reviews, mock interviews, salary negotiation, job-switch strategy, and building the right skillset for growth. Whether you are trying to land your first job, switch into a better role, crack backend/full-stack interviews, or understand what skills actually matter in the industry, I can help you with practical, honest, and experience-based advice.
+                    </p>
+                    <p>
+                        If you’re feeling stuck, underconfident, or unsure what to focus on next, this call will give you clarity, direction, and an actionable plan.
+                    </p>
                 </p>
             </motion.div>
 
@@ -102,7 +99,7 @@ export default function AboutMe() {
                         width={240}
                         height={140}
                         className='w-56 md:w-72 object-cover rounded-3xl'
-                        // priority
+                    // priority
                     />
                 </div>
             </motion.div>
