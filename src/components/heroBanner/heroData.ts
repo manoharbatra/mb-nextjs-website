@@ -8,6 +8,7 @@ import {
   FaMedium,
   FaGithub,
   FaWhatsapp,
+  FaTelegram
 } from "react-icons/fa6"
 
 
@@ -47,8 +48,8 @@ export const communityData = [
   {
     href: "https://www.youtube.com/@ManoharBatra",
     icon: FaYoutube,
-    value: "98k+",
-    label: "College To Corporate",
+    value: "98k+ Subscribers",
+    label: "Job & Corporate Knowledge",
     color: "text-red-500",
   },
   {
@@ -94,11 +95,18 @@ export const communityData = [
     label: "Followers",
     color: "text-gray-900",
   },
+  // {
+  //   href: "https://chat.whatsapp.com/LfsYDSr4rBL3TA8Y11Vc4V",
+  //   icon: FaWhatsapp,
+  //   value: "400+",
+  //   label: "Members",
+  //   color: "text-green-500",
+  // },
   {
-    href: "https://chat.whatsapp.com/LfsYDSr4rBL3TA8Y11Vc4V",
-    icon: FaWhatsapp,
-    value: "400+",
-    label: "Members",
-    color: "text-green-500",
+    href: "https://t.me/manoharbatrag",
+    icon: FaTelegram,
+    value: "Job Updates",
+    label: "2.7k+ Followers",
+    color: "text-blue-400",
   },
 ]

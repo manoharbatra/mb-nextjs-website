@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { communityData, heroData } from "./heroData"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { FaTelegram } from "react-icons/fa6"
 
 export default function HeroBanner() {
     const [index, setIndex] = useState(0)
@@ -45,6 +46,7 @@ export default function HeroBanner() {
                     >
                         {communityData.map((item, idx) => {
                             const Icon = item.icon
+                            const hasBorderMotion = item.icon === FaTelegram || item.img === "/images/topmate.jpg"
 
                             return (
                                 <a
@@ -54,7 +56,13 @@ export default function HeroBanner() {
                                     rel="noopener noreferrer"
                                     className="group"
                                 >
-                                    <div className="flex items-center gap-3 bg-white/90 px-4 py-2 rounded-full shadow-md transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl min-w-[130px]">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        whileHover={hasBorderMotion ? { borderColor: "rgb(59 130 246)", scale: 1.02 } : {}}
+                                        transition={{ duration: 0.25 }}
+                                        className={`flex items-center gap-3 bg-white/90 px-4 py-2 rounded-full shadow-md transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl min-w-[130px] ${hasBorderMotion ? "border border-slate-300" : ""}`}
+                                    >
 
                                         {/* ICON OR IMAGE */}
                                         <div className={`text-2xl ${item.color} transition-transform duration-300 group-hover:scale-110`}>
@@ -80,7 +88,7 @@ export default function HeroBanner() {
                                                 {item.label}
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </a>
                             )
                         })}
