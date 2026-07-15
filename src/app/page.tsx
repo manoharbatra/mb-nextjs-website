@@ -157,7 +157,7 @@ export default function Home() {
                 {/* <YouTubeMembers sponsors={youTubeMembersList}/> */}
                 <FansFeedback />
                 <AboutMe />
-                <ContactMe /> {/* 👈 Add this at the end */}
+                {/*<ContactMe /> {/* 👈 Add this at the end */}
             </div>
         </div>
     )

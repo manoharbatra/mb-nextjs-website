@@ -9,6 +9,20 @@ export interface CertificationsItem {
 
 export const certifications: CertificationsItem[] = [
   {
+    src: "/images/certifications/TS-1.jpeg",
+    name: "IBM: Technical Specialist",
+    issuer: "IBM",
+    width: 300,
+    height: 250,
+  },
+  {
+    src: "/images/certifications/TC_Exp.jpeg",
+    name: "IBM: Application Specialist",
+    issuer: "IBM",
+    width: 300,
+    height: 250,
+  },
+  {
     src: "/images/certifications/GH-300.png",
     name: "GH-300: Github Copilot",
     issuer: "Microsoft",
@@ -32,13 +46,6 @@ export const certifications: CertificationsItem[] = [
   {
     src: "/images/certifications/IBM_genAI.jpeg",
     name: "IBM Agentic AI Developer",
-    issuer: "IBM",
-    width: 300,
-    height: 250,
-  },
-  {
-    src: "/images/certifications/TC_Exp.jpeg",
-    name: "IBM: Technical Specialist",
     issuer: "IBM",
     width: 300,
     height: 250,
