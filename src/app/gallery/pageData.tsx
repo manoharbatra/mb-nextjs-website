@@ -57,11 +57,10 @@ export const creators: GalleryItem[] = [
         width: 200,
     },
     {
-        src: "/images/corporate/vanya_goel.jpeg",
+        src: "/images/creators/vanya_goel.jpeg",
         name: "Vanya Goel",
         description: "Founder - Pitch N Hire",
-        logo: "/images/companyLogos/vanya_goel.jpeg",
-        width: 280,
+        width: 230,
     },
 ]
 
@@ -177,9 +176,9 @@ export const corporate_contacts: GalleryItem[] = [
     {
         src: "/images/corporate/pallavi_singh.jpeg",
         name: "Pallavi Singh",
-        description: "Vice President - AI & Data Advisory",
-        logo: "/images/companyLogos/pallavi_singh.jpeg",
-        width: 280,
+        description: "VP - AI & Data Advisory",
+        logo: "/images/companyLogos/Genpact.png",
+        width: 200,
     },
     {
         src: "/images/corporate/prasanna.jpeg",
