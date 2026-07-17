@@ -55,7 +55,14 @@ export const creators: GalleryItem[] = [
         src: "/images/creators/manas_chopra.jpeg",
         name: "Manas Chopra",
         width: 200,
-    }
+    },
+    {
+        src: "/images/corporate/vanya_goel.jpeg",
+        name: "Vanya Goel",
+        description: "Founder - Pitch N Hire",
+        logo: "/images/companyLogos/vanya_goel.jpeg",
+        width: 280,
+    },
 ]
 
 export const course_members: GalleryItem[] = [
@@ -168,6 +175,13 @@ export const company_events: GalleryItem[] = [
 
 export const corporate_contacts: GalleryItem[] = [
     {
+        src: "/images/corporate/pallavi_singh.jpeg",
+        name: "Pallavi Singh",
+        description: "Vice President - AI & Data Advisory",
+        logo: "/images/companyLogos/pallavi_singh.jpeg",
+        width: 280,
+    },
+    {
         src: "/images/corporate/prasanna.jpeg",
         name: "Prasanna M Sridhara",
         description: "Associate Partner Digital & iX PAL - Distribution Sector",
@@ -177,7 +191,7 @@ export const corporate_contacts: GalleryItem[] = [
     {
         src: "/images/corporate/sufiya_khan.PNG",
         name: "Sufiya Khan",
-        description: "Associate Partner - Front End Exp",
+        description: "Associate Partner - Front End Experience",
         logo: "/images/companyLogos/ibm.jpg",
         width: 230,
     },
