@@ -62,6 +62,12 @@ export const creators: GalleryItem[] = [
         description: "Founder - Pitch N Hire",
         width: 230,
     },
+    {
+        src: "/images/creators/rohit.jpeg",
+        name: "Rohit",
+        description: "Creator",
+        width: 230,
+    },
 ]
 
 export const course_members: GalleryItem[] = [
@@ -199,5 +205,13 @@ export const corporate_contacts: GalleryItem[] = [
         name: "Prashant + Amit",
         description: "Senior Project Managers",
         logo: "/images/companyLogos/qad.jpg",
+        width: 230,
+    },
+    {
+        src: "/images/corporate/sudipta.jpeg",
+        name: "Sudipta",
+        description: "Fractional CHRO",
+        // logo: "/images/companyLogos/qad.jpg",
+        width: 230,
     },
 ]
