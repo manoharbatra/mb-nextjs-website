@@ -3,7 +3,7 @@ export const saleConfig = {
   title: "🎉 Job of the Day",
   subtitles: [
     {
-      text: "✅ Check out 800+ companies hiring in 2025",
+      text: "✅ Check out 800+ companies hiring in 2026",
       link: "https://www.topmate.io/manohar",
     },
     {

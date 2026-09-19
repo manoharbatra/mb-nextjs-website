@@ -59,7 +59,7 @@ export const communityData: CommunityItem[] = [
   {
     href: "https://www.youtube.com/@ManoharBatra",
     icon: FaYoutube,
-    value: "98k+ Subscribers",
+    value: "99k+ Subscribers",
     label: "Job & Corporate Knowledge",
     color: "text-red-500",
   },
@@ -87,7 +87,7 @@ export const communityData: CommunityItem[] = [
   {
     href: "https://www.instagram.com/career.manoharbatrayt/",
     icon: FaInstagram,
-    value: "4.5K+",
+    value: "5K+",
     label: "Followers",
     color: "text-pink-500",
   },
@@ -95,7 +95,7 @@ export const communityData: CommunityItem[] = [
   {
     href: "https://medium.com/@contactmanoharbatra",
     icon: FaMedium,
-    value: "60+",
+    value: "120+",
     label: "Followers",
     color: "text-gray-800",
   },
