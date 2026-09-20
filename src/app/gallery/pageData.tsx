@@ -203,7 +203,7 @@ export const corporate_contacts: GalleryItem[] = [
     {
         src: "/images/corporate/amit_prashant.jpeg",
         name: "Prashant + Amit",
-        description: "Senior Project Managers",
+        description: "Director",
         logo: "/images/companyLogos/qad.jpg",
         width: 230,
     },

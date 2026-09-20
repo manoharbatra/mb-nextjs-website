@@ -106,14 +106,14 @@ export default function HeroBanner() {
                         priority
                     />
 
-                    <div className="absolute top-2 left-2 md:top-8 md:left-10 bg-white px-2 py-1 md:px-4 md:py-2 rounded-lg shadow-lg text-xs md:text-base">
+                    <div className="absolute top-2 left-3 md:top-8 md:left-15 bg-white px-2 py-1 md:px-5 md:py-2 rounded-lg shadow-lg text-xs md:text-base">
                         <p className="font-semibold text-slate-900">
-                            Sr Cloud Full Stack
+                            Technical Lead
                         </p>
                     </div>
 
                     <div className="absolute bottom-36 right-2 md:right-10 bg-white px-3 py-1 md:px-10 md:py-2 rounded-lg shadow-lg text-xs md:text-base">
-                        <p className="font-semibold text-slate-900">11 yrs exp</p>
+                        <p className="font-semibold text-slate-900">12 yrs exp</p>
                     </div>
 
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 

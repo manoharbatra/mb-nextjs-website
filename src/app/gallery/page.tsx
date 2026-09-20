@@ -178,7 +178,7 @@ export default function GalleryPage() {
 
             <GallerySection title='Creators' items={creators} />
             <GallerySection
-                title='Badi baat cheet Corporate ke logo se'
+                title='Corporate Contacts'
                 items={corporate_contacts}
             />
             <GallerySection

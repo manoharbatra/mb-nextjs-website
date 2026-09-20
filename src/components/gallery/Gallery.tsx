@@ -166,7 +166,7 @@ export default function Gallery() {
     return (
         <main className='w-full'>
             <GallerySection
-                title='Badi baat cheet Industry ke logo se'
+                title=''
                 items={creators}
             />
         </main>
