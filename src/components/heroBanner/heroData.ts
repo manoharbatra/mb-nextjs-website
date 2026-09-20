@@ -140,8 +140,8 @@ export const mainButtonsData: CommunityItem[] = [
   {
     href: "https://whatsapp.com/channel/0029VbDCGHK9xVJiLdicBf0S",
     icon: FaWhatsapp,
-    value: "400+ Subscribers",
-    label: "Job Market & Salary Insights",
+    value: "Job Market",
+    label: "100+ Followers",
     color: "text-red-500",
   }
   // {
