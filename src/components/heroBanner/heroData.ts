@@ -7,7 +7,7 @@ import {
   // FaFacebook,
   FaMedium,
   FaGithub,
-  // FaWhatsapp,
+  FaWhatsapp,
   FaTelegram,
   FaBook
 } from "react-icons/fa6"
@@ -73,7 +73,7 @@ export const communityData: CommunityItem[] = [
   {
     href: "https://www.linkedin.com/in/manoharbatra/",
     icon: FaLinkedin,
-    value: "38k+",
+    value: "40k+",
     label: "Followers",
     color: "text-blue-600",
   },
@@ -99,13 +99,13 @@ export const communityData: CommunityItem[] = [
     label: "Followers",
     color: "text-gray-800",
   },
-  {
-    href: "https://github.com/manoharbatra",
-    icon: FaGithub,
-    value: "70+",
-    label: "Followers",
-    color: "text-gray-900",
-  },
+  // {
+  //   href: "https://github.com/manoharbatra",
+  //   icon: FaGithub,
+  //   value: "70+",
+  //   label: "Followers",
+  //   color: "text-gray-900",
+  // },
   // {
   //   href: "https://chat.whatsapp.com/LfsYDSr4rBL3TA8Y11Vc4V",
   //   icon: FaWhatsapp,
@@ -138,10 +138,17 @@ export const mainButtonsData: CommunityItem[] = [
     color: "text-purple-600",
   },
   {
-    href: "https://t.me/manoharbatrag",
-    icon: FaTelegram,
-    value: "Job Updates",
-    label: "2.7k+ Followers",
-    color: "text-blue-400",
-  },
+    href: "https://whatsapp.com/channel/0029VbDCGHK9xVJiLdicBf0S",
+    icon: FaWhatsapp,
+    value: "400+ Subscribers",
+    label: "Job Market & Salary Insights",
+    color: "text-red-500",
+  }
+  // {
+  //   href: "https://t.me/manoharbatrag",
+  //   icon: FaTelegram,
+  //   value: "Job Updates",
+  //   label: "2.7k+ Followers",
+  //   color: "text-blue-400",
+  // },
 ]

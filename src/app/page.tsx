@@ -54,7 +54,8 @@ export default function Home() {
             dayNumber: diffDays + 1, // for Day count
         })
 
-        setShowPromo(true)
+        // Make it true to show the promo modal on page load
+        setShowPromo(false);
     }, [])
 
     if (!todayCompany) return null

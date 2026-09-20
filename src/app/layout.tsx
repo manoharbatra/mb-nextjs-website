@@ -26,7 +26,7 @@ export default function RootLayout({
                 {`(function(){try{var stored=localStorage.getItem('theme');var m=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');var apply=function(isDark){if(isDark)document.documentElement.classList.add('dark');else document.documentElement.classList.remove('dark')};if(stored==='dark'||stored==='light'){apply(stored==='dark')}else{apply(m&&m.matches)}if(m){if(m.addEventListener){m.addEventListener('change',function(e){if(!localStorage.getItem('theme'))apply(e.matches)})}else if(m.addListener){m.addListener(function(e){if(!localStorage.getItem('theme'))apply(e.matches)})}}}catch(e){}})()`}
             </Script>
             <body className='flex flex-col min-h-screen'>
-                {/* <AnnouncementBanner /> */}
+                <AnnouncementBanner />
                 <Header />
                 <main>
                     {children}
